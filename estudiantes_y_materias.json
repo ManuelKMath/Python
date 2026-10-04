@@ -1,0 +1,22 @@
+{
+    "estudiantes": [
+        [
+            "1",
+            "Manuel"
+        ],
+        [
+            "2",
+            "Pedro"
+        ]
+    ],
+    "inscripciones": {
+        "1": [
+            "MAT101",
+            "PROG101"
+        ],
+        "2": [
+            "FIS101",
+            "MAT101"
+        ]
+    }
+}
