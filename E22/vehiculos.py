@@ -46,3 +46,6 @@ class Camion(Vehiculo):
     def __init__(self, placa, marca, kilometraje : float, costo_base_mantenimiento : float, capacidad_toneladas : float):
         super().__init__(placa, marca, kilometraje, costo_base_mantenimiento)
         self._capacidad_toneladas = capacidad_toneladas
+
+    def calcular_mantenimiento(self):
+        return self.costo_base_mantenimiento + (0.15 * self._capacidad_toneladas)
