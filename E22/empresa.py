@@ -26,3 +26,13 @@ class EmpresaLogistica:
                 return
             self.buscar_vehiculo(placa).kilometraje = kilometraje_nuevo
             return
+
+    def calcular_costo_total_mantenimiento(self):
+        if not self.flota:
+            print("No hay vehículos en la flota")
+            return
+        costo_total_mantenimiento = 0.0
+        for vehiculo in self.flota.values():
+            costo_total_mantenimiento += vehiculo.calcular_mantenimiento()
+        print(f"Costo total del mantenimiento de la flota: {costo_total_mantenimiento}")
+        return
