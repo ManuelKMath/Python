@@ -34,3 +34,7 @@ class Vehiculo:
 
     def calcular_mantenimiento(self):
         return self.costo_base_mantenimiento
+
+    @property
+    def placa(self):
+        return self._placa
