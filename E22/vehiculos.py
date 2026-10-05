@@ -63,3 +63,9 @@ class Furgoneta(Vehiculo):
             return self.costo_base_mantenimiento + 200.0
         else:
             return self.costo_base_mantenimiento
+
+    def __str__(self):
+        if self._es_refrigerada:
+            return f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento} Es refrigerada: Si"
+        else:
+            return f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento} Es refrigerada: No"
