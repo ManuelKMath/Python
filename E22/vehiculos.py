@@ -79,3 +79,6 @@ class Motocicleta(Vehiculo):
         if self._cilindrada > 200:
             return self.costo_base_mantenimiento + (0.20 * self.costo_base_mantenimiento)
         return self.costo_base_mantenimiento
+
+    def __str__(self):
+        return  f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento} Cilindrada: {self._cilindrada}"
