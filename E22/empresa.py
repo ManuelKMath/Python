@@ -16,3 +16,13 @@ class EmpresaLogistica:
         if not placa.upper() in self.flota:
             return
         return self.flota[placa]
+
+    def actualizar_kilometraje_vehiculo(self, placa, kilometraje_nuevo: float):
+            if not self.flota:
+                print("No hay vehículos en la flota")
+                return
+            if self.buscar_vehiculo(placa) is None:
+                print("Introduce una placa válida")
+                return
+            self.buscar_vehiculo(placa).kilometraje = kilometraje_nuevo
+            return
