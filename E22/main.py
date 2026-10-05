@@ -161,7 +161,7 @@ def menu():
             case 4:
                 empresa.calcular_costo_total_mantenimiento()
             case 5:
-                pass
+                guardar_datos(ruta, empresa)
             case 6:
                 pass
             case 7:
