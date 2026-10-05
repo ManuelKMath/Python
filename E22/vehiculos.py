@@ -31,3 +31,6 @@ class Vehiculo:
         self._costo_base_mantenimiento = nuevo_costo_base_mantenimiento
         print(f"Se ha cambiado exitosamente el costo base del mantenimiento a {self._costo_base_mantenimiento}")
         return
+
+    def calcular_mantenimiento(self):
+        return self.costo_base_mantenimiento
