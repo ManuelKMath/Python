@@ -69,3 +69,8 @@ class Furgoneta(Vehiculo):
             return f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento} Es refrigerada: Si"
         else:
             return f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento} Es refrigerada: No"
+
+class Motocicleta(Vehiculo):
+    def __init__(self, placa, marca, kilometraje : float, costo_base_mantenimiento : float, cilindrada : int):
+        super().__init__(placa, marca, kilometraje, costo_base_mantenimiento)
+        self._cilindrada = cilindrada
