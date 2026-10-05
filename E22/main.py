@@ -145,7 +145,11 @@ def menu():
                         case _:
                             print("Elige una de las opciones que aparece en el menú")
             case 2:
-                pass
+                placa = input("Introduce la placa del vehículo: ")
+                if empresa.buscar_vehiculo(placa) is None:
+                    print(f"No hay un vehículo registrado con la placa {placa} en la flota")
+                    continue
+                print(empresa.buscar_vehiculo(placa))
             case 3:
                 pass
             case 4:
