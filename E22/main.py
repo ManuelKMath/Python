@@ -159,7 +159,7 @@ def menu():
                     continue
                 empresa.actualizar_kilometraje_vehiculo(placa, kilometraje)
             case 4:
-                pass
+                empresa.calcular_costo_total_mantenimiento()
             case 5:
                 pass
             case 6:
