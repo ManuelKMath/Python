@@ -38,3 +38,6 @@ class Vehiculo:
     @property
     def placa(self):
         return self._placa
+
+    def __str__(self):
+        return f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento}"
