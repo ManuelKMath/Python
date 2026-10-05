@@ -18,3 +18,16 @@ class Vehiculo:
         self._kilometraje = kilometraje_nuevo
         print(f"Se ha cambiado exitosamente el kilometraje a {self._kilometraje}")
         return 
+
+    @property
+    def costo_base_mantenimiento(self):
+        return self._costo_base_mantenimiento
+
+    @costo_base_mantenimiento.setter
+    def costo_base_mantenimiento(self, nuevo_costo_base_mantenimiento : float):
+        if nuevo_costo_base_mantenimiento <= 0:
+            print("Introduce un nuevo costo base del mantenimiento mayor a 0")
+            return
+        self._costo_base_mantenimiento = nuevo_costo_base_mantenimiento
+        print(f"Se ha cambiado exitosamente el costo base del mantenimiento a {self._costo_base_mantenimiento}")
+        return
