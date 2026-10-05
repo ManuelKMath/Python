@@ -74,3 +74,8 @@ class Motocicleta(Vehiculo):
     def __init__(self, placa, marca, kilometraje : float, costo_base_mantenimiento : float, cilindrada : int):
         super().__init__(placa, marca, kilometraje, costo_base_mantenimiento)
         self._cilindrada = cilindrada
+
+    def calcular_mantenimiento(self):
+        if self._cilindrada > 200:
+            return self.costo_base_mantenimiento + (0.20 * self.costo_base_mantenimiento)
+        return self.costo_base_mantenimiento
