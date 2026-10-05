@@ -151,7 +151,13 @@ def menu():
                     continue
                 print(empresa.buscar_vehiculo(placa))
             case 3:
-                pass
+                placa = input("Introduce la placa del vehículo: ")
+                try:
+                    kilometraje = float(input("Introduce el kilometraje del vehículo: "))
+                except ValueError:
+                    print("Introduce un número como kilometraje")
+                    continue
+                empresa.actualizar_kilometraje_vehiculo(placa, kilometraje)
             case 4:
                 pass
             case 5:
