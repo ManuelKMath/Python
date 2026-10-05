@@ -36,3 +36,13 @@ class EmpresaLogistica:
             costo_total_mantenimiento += vehiculo.calcular_mantenimiento()
         print(f"Costo total del mantenimiento de la flota: {costo_total_mantenimiento}")
         return
+
+    def generar_reporte(self):
+        if not self.flota:
+            print("No hay vehículos en la flota")
+            return
+        print("Flota actual")
+        for vehiculo in self.flota.values():
+            print(vehiculo)
+        return
+    
