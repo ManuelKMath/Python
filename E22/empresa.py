@@ -11,3 +11,8 @@ class EmpresaLogistica:
         self.flota[vehiculo.placa] = vehiculo
         print(f"Se ha registrado exitosamente el vehículo con placa: {vehiculo.placa}")
         return
+
+    def buscar_vehiculo(self, placa):
+        if not placa.upper() in self.flota:
+            return
+        return self.flota[placa]
