@@ -41,3 +41,8 @@ class Vehiculo:
 
     def __str__(self):
         return f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento}"
+
+class Camion(Vehiculo):
+    def __init__(self, placa, marca, kilometraje : float, costo_base_mantenimiento : float, capacidad_toneladas : float):
+        super().__init__(placa, marca, kilometraje, costo_base_mantenimiento)
+        self._capacidad_toneladas = capacidad_toneladas
