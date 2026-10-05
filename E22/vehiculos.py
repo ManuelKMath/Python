@@ -57,3 +57,9 @@ class Furgoneta(Vehiculo):
     def __init__(self, placa, marca, kilometraje : float, costo_base_mantenimiento : float, es_refrigerada : bool):
         super().__init__(placa, marca, kilometraje, costo_base_mantenimiento)
         self._es_refrigerada = es_refrigerada
+
+    def calcular_mantenimiento(self):
+        if self._es_refrigerada:
+            return self.costo_base_mantenimiento + 200.0
+        else:
+            return self.costo_base_mantenimiento
