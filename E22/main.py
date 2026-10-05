@@ -163,7 +163,7 @@ def menu():
             case 5:
                 guardar_datos(ruta, empresa)
             case 6:
-                pass
+                empresa.generar_reporte()
             case 7:
                 print("Saliendo...")
                 break
