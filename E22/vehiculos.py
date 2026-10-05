@@ -49,3 +49,6 @@ class Camion(Vehiculo):
 
     def calcular_mantenimiento(self):
         return self.costo_base_mantenimiento + (0.15 * self._capacidad_toneladas)
+
+    def __str__(self):
+        return  f"Placa: {self._placa} Marca: {self._marca} Kilometraje: {self._kilometraje} Costo base mantenimiento: {self._costo_base_mantenimiento} Capacidad de toneladas: {self._capacidad_toneladas}"
