@@ -31,3 +31,8 @@ class Auto(Vehiculo):
         if self.es_electrico:
             return 0.0
         return 0.05 * self.kilometraje
+
+class Camion(Vehiculo):
+    def __init__(self, placa : str, kilometraje : float, costo_base_mantenimiento : float, ejes : int):
+        super().__init__(placa, kilometraje, costo_base_mantenimiento)
+        self.ejes = ejes
