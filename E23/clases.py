@@ -36,7 +36,12 @@ class Camion(Vehiculo):
     def __init__(self, placa : str, kilometraje : float, costo_base_mantenimiento : float, ejes : int):
         super().__init__(placa, kilometraje, costo_base_mantenimiento)
         self.ejes = ejes
-        
+
     def calcular_impuesto(self) -> float:
         """Método heredado de la clase abstracta que retorna el impuesto de los objetos de la clase Camion"""
         return (0.10 * self.kilometraje) + (50.0 * self.ejes) 
+
+class Moto(Vehiculo):
+    def __init__(self, placa : str, kilometraje : float, costo_base_mantenimiento : float, cilindrada : float):
+        super().__init__(placa, kilometraje, costo_base_mantenimiento)
+        self.cilindrada = cilindrada
