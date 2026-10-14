@@ -25,3 +25,9 @@ class Auto(Vehiculo):
     def __init__(self, placa : str, kilometraje : float, costo_base_mantenimiento : float, es_electrico : bool):
         super().__init__(placa, kilometraje, costo_base_mantenimiento)
         self.es_electrico = es_electrico
+
+    def calcular_impuesto(self) -> float:
+        """Método heredado de la clase abstracta que retorna el impuesto de los objetos de la clase Auto"""
+        if self.es_electrico:
+            return 0.0
+        return 0.05 * self.kilometraje
