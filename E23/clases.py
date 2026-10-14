@@ -11,3 +11,12 @@ class Vehiculo(ABC):
     @abstractmethod
     def calcular_impuesto(self) -> float:
         return 0.0
+
+    """Método que permite actualizar el kilometraje de cualquier tipo de vehículo, utilizado comúnmente en las clases hijas de tipos de vehículos"""
+    def actualizar_kilometraje(self, nuevos_km : float) -> float:
+        if nuevos_km <= self.kilometraje:
+            print(f"Ingresa una cantidad de kilometros mayor a la actual: {self.kilometraje}")
+            return
+        self.kilometraje = nuevos_km
+        print(f"Se ha actualizado el kilometraje a: {self.kilometraje}")
+        return
