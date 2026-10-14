@@ -6,3 +6,8 @@ class Vehiculo(ABC):
         self.placa = placa
         self.kilometraje = kilometraje
         self.costo_base_mantenimiento = costo_base_mantenimiento
+
+    """Método abstracto para calcular el impuesto de las subclases de tipos de vehículos"""
+    @abstractmethod
+    def calcular_impuesto(self) -> float:
+        return 0.0
