@@ -58,7 +58,7 @@ def menu():
                                 continue
                             if capacidad_toneladas < 0.0:
                                 print("Introduce una capacidad de toneladas mayor a 0")
-                                return
+                                continue
                             vehiculo = Camion(placa, marca, kilometraje, costo_base_mantenimiento, capacidad_toneladas)
                             empresa.registrar_vehiculo(vehiculo)
                             break
