@@ -20,3 +20,8 @@ class Vehiculo(ABC):
         self.kilometraje = nuevos_km
         print(f"Se ha actualizado el kilometraje a: {self.kilometraje}")
         return
+
+class Auto(Vehiculo):
+    def __init__(self, placa : str, kilometraje : float, costo_base_mantenimiento : float, es_electrico : bool):
+        super().__init__(placa, kilometraje, costo_base_mantenimiento)
+        self.es_electrico = es_electrico
