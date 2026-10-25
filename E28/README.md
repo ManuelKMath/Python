@@ -1,4 +1,4 @@
-# Ejercicio de calentamiento de creación de decoradores (E27)
+# Ejercicio de calentamiento de creación de decoradores (E28)
 
 Vas a crear un decorador de Registro y Log de Auditoría llamado @auditar_ejecucion.
 
